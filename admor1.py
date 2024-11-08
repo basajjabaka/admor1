@@ -237,6 +237,6 @@ def update_seasonality(_):
     fig.update_yaxes(title_text="Complaints Frequency")
     return fig
 
+port = int(os.environ.get("PORT", 8850))
 
-
-app1.run_server(debug=True)
+app1.run_server(host="0.0.0.0", port=port, debug=True)
