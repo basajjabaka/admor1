@@ -1,7 +1,6 @@
 dash
 pandas
 gunicorn
-os
 dash_bootstrap_components
 plotly
 openpyxl
