@@ -148,7 +148,9 @@ def update_bar2(state):
     # Get the top 5 issues
     top5 = filtered_df['Product'].value_counts().nlargest(5)
     
-    fig = px.bar(top5, x = top5.index, y = top5.values,
+    fig = px.bar(top5, 
+                 x = top5.index.tolist(), 
+                 y = top5.values.tolist(),
                  labels = {'x' : 'Products', 'y': 'Frequency'},
                  title = f'Top 5 Products in {state}')
 
@@ -163,8 +165,8 @@ def update_bar2(state):
 def update_bar3(_):
     top_states = df['State'].value_counts().nlargest(5)
     fig = px.bar(
-        x=top_states.index, 
-        y=top_states.values,
+        x=top_states.index.tolist(), 
+        y=top_states.values.tolist(),
         labels={'x': 'State', 'y': 'Complaints Frequency'},
         title='Top 5 States with Highest Complaints'
     )
