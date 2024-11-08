@@ -239,4 +239,4 @@ def update_seasonality(_):
 
 
 
-app1.run_server(debug=True, mode='inline', port=5450)
+app1.run_server(debug=True)
