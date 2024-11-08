@@ -69,6 +69,7 @@ states = ['NY', 'FL', 'CA', 'VA', 'TX', 'KS', 'GA', 'CT', 'OH', 'NJ', 'IL', 'MI'
           'IN', 'MA', 'MD', 'NV', 'TN', 'AZ', 'MO', 'DC', 'ID', 'MS', 'CO', 'OR', 'MN', 'KY', 'AR', 
           'NH', 'NM', 'UT', 'SC', 'AL', 'DE', 'OK', 'LA', 'RI', 'WI', 'IA', 'ME', 'WV', 'VT', 'NE', 
           'SD', 'HI', 'AK', 'MT', 'ND', 'WY']
+server = app1.server
 
 app1.layout = html.Div([
     html.H1("Consumer Complaints Analysis Dashboard", style={'textAlign': 'center', 'color': '#1F77B4'}),
